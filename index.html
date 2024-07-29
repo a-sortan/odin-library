@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odin library</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="./feather.js"></script>
+  <script defer src="./index.js"></script>
+</head>
+<body>
+  <h1>Odin's library</h1>
+  <section>
+    <main>
+      <section id="shelf">
+        <h2>Book shelf</h2>
+        <ul id="books">
+          <li>
+            <article>
+              <header>
+                  <h3 class="headline">Title</h3>
+                  <address class="author">By <a rel="author" href="#">John Doe</a></address> 
+                  <span class="tooltiptext">
+                    <h3>Title</h3>
+                    <address>By John Doe</address> 
+                  </span>
+              </header>
+              <div class="article-content">
+                <sub>Read</sub>
+                <i data-feather="circle"></i>
+              </div>
+            </article> 
+          </li>
+        </ul>
+      </section>
+    </main>
+    <hr>
+    <aside>
+      <h2>Add a new book</h2>
+    </aside>
+  </section>
+  <script>
+    feather.replace({class: 'secondary-icons book-status'});
+  </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+:root {
+  --primary: #dcfce7;
+  --secondary: #064e3b;
+  --red: #b91c1c;
+  --white: #f0fdf4;
+  --black: #030712;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 700px;
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 2rem; */
+  color: var(--black);
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h3 {
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  /* box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.6); */
+  color: var(--white);
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+body > section {
+  min-width: 100%;
+  flex: auto;
+  width: 100vw;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 6px 50px -8px #1f2937;
+  background-color: var(--white);
+  /* background-color: rgba(30, 41, 59, 0.5); */
+  /* align-items: flex-start; */
+
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  min-width: 360px;
+  /* background-color: blueviolet; */
+}
+
+hr {
+  border: 1px solid var(--secondary);
+}
+
+aside {
+  flex-basis: auto;
+  min-width: 360px;
+  padding: 1rem;
+  /* background-color: rgba(49, 46, 129, 0.5); */
+
+}
+
+ul {
+  /* background-color: #b91c1c; */
+  list-style: none;
+  padding: 1rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+ul li {
+  width: 180px;
+  height: 240px;
+  border: 1px solid rgb(82, 41, 3);
+  border-radius: 8px;
+  padding: 0.6rem 0;
+  background-color: #693707;
+  color: var(--white);
+  box-shadow: rgba(82, 41, 3, 0.4) 0px 5px 15px;
+}
+
+.secondary-icons {
+  color: var(--white)
+}
+
+article {
+  height: 100%;
+  position: relative;
+  padding: 8px 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+article  {
+  position: relative;
+}
+
+article header .tooltiptext {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 8px;
+  border-radius: 8px;
+  position: absolute;
+  right: -30px;
+  top: 0;
+}
+
+article header:hover .tooltiptext {
+  visibility: visible;
+}
+
+.article-content {
+  margin: 0 0 0 auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 8px;
+}
+
+.book-status {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+article header {
+  margin: 0 0 2rem 0;
+  height: 80%;
+}
+
+article h3 {
+  min-height: 60%;
+  /* font-size: small; */
+}
+
+article address {
+  text-align: right;
+}
